@@ -62,7 +62,24 @@ function calc(crys) {
 }
 
 //Onclick for crystals to add points
-$("#crystal1").on("click", calc(crys1Val))
+$("#crystal1").on("click", function () {
+{
+    $("#points").text(point += crys1Val)
+
+    if (point === randPoint) {
+        win++
+        $("#points").text(0)
+        $("#wins").text(win)
+
+        gameStart()
+
+    } else if (point > randPoint) {
+        loss++
+        $("#points").text(0)
+        $("#losses").text(loss)
+        
+    }
+}})
 
 $("#crystal2").on("click", function () {
     $("#points").text(point += crys2Val)
