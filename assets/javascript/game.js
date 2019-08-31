@@ -7,6 +7,8 @@ var point;
 var win = 0;
 var loss = 0;
 var crys;
+var genVal;
+var cryst;
 
 //Function to start/reset game
 function gameStart() {
@@ -30,6 +32,7 @@ function gameStart() {
     console.log(crys1Val)
     console.log(crys2Val)
     console.log(crys3Val)
+
 
     //Generation of random point to get
     function genValTotal() {
