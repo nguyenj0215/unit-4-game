@@ -47,23 +47,6 @@ function gameStart() {
 
 gameStart()
 
-function calc(crys) {
-    $("#points").text(point += crys)
-
-    if (point === randPoint) {
-        win++
-        $("#points").text(0)
-        $("#wins").text(win)
-        gameStart()
-
-    } else if (point > randPoint) {
-        loss++
-        $("#points").text(0)
-        $("#losses").text(loss)
-        
-    }
-}
-
 //Onclick for crystals to add points
 $("#crystal1").on("click", function () {
 {
@@ -78,6 +61,7 @@ $("#crystal1").on("click", function () {
 
     } else if (point > randPoint) {
         loss++
+        point=0
         $("#points").text(0)
         $("#losses").text(loss)
         
@@ -96,6 +80,7 @@ $("#crystal2").on("click", function () {
 
     } else if (point > randPoint) {
         loss++
+        point=0
         $("#points").text(0)
         $("#losses").text(loss)
         
@@ -113,6 +98,7 @@ $("#crystal3").on("click", function () {
 
     } else if (point > randPoint) {
         loss++
+        point=0
         $("#points").text(0)
         $("#losses").text(loss)
         

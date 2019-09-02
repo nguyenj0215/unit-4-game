@@ -13,16 +13,25 @@
 </head>
 
 <body>
-    <p>Crystal Collector</p>
-    <p>Game instructions</p>
-    <p>Target Points: <span id="pointsToGet"></span></p>
-    <p>Points: <span id="points"></span></p>
-    <p>Wins: <span id="wins">0</span></p>
-    <p>Losses: <span id="losses">0</span></p>
+    <p class="header">Crystal Collector</p>
+    
+    <section class="mainContent">
+        <p class="boxHeader">Game instructions</p>
+        <p>Each crystal has a hidden and randomly generated value assigned to it. Click on crystals to add points to your total. If you obtain the target point value you win. If you go over the target value you lose and will have your points reset and crystals assigned new values.</p>
+        <section class="boxContent">
+            <p>Target Points: <span id="pointsToGet"></span></p>
+            <p>Points: <span id="points"></span></p>
+            <p>Wins: <span id="wins">0</span></p>
+            <p>Losses: <span id="losses">0</span></p>
+        </section>
 
-    <img src="#" alt="crystal 1" id="crystal1" class="crystal">
-    <img src="#" alt="crystal 2" id="crystal2" class="crystal">
-    <img src="#" alt="crystal 3" id="crystal3" class="crystal">
+        <section class="imgBox">
+            <img src="../unit-4-rpg-game/assets/images/wave.jpg" alt="crystal 1" id="crystal1" class="crystal">
+            <img src="../unit-4-rpg-game/assets/images/wave.jpg" alt="crystal 2" id="crystal2" class="crystal">
+            <img src="../unit-4-rpg-game/assets/images/wave.jpg" alt="crystal 3" id="crystal3" class="crystal">
+        </section>
+    </section>
+
 
     <script src="assets/javascript/game.js"></script>
 
