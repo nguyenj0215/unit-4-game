@@ -1,3 +1,4 @@
+$(document).ready(function () {
 
 var crys1Val;
 var crys2Val;
@@ -103,6 +104,7 @@ $("#crystal3").on("click", function () {
         $("#losses").text(loss)
         
     }
+})
 })
 
 
